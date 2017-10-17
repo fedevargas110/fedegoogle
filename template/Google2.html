@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+        <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="shortcut icon" href="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png" >
+        
+        <title>GoogleNote</title>
+        <link rel="stylesheet" href="../css/StylesFake.css">
+    </head>
+
+    <body>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+        <div class="row">
+            <span><div class="col s1"><a style="text-decoration:none;color:#000"  href="https://mail.google.com/">Gmail</a></div></span>
+            
+            <span><div class="col s1"><a style="text-decoration:none;color:#000" href="https://www.google.com.ar/imghp?hl=es-419&tab=wi">Imágenes</a></div></span>
+            
+            <span><div class="col s1"><a href="Google.html" id="gps" role="button" onclick="cambiar();" style="color:#000"><div class="large material-icons icon offset-s6" id="gps" role="button">location_on</div></a></div></span>
+            
+            <span><div class="col s1"><a style="text-decoration: none; color: black" href="https://www.google.com.ar/maps"><div class="material-icons icon">navigation</div></a></div></span>
+            
+             <span><div class="col s1" id="signin"><button type="button" onclick="Signingoogle()">SignIn</button></div></span>
+            
+        </div>
+        
+        <div class="ImagenGE">
+            <img src= "https://www.google.com.ar/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"   width="260" height="90" class="Img" title="Scrapea el mundo">
+            
+            <div class="gsfi" style="background: transparent none repeat scroll 0% 0%; color: transparent; padding: 0px; position: absolute; z-index: 2; white-space: pre; visibility: hidden;" id="gs_sc0"></div>
+            
+        </div>
+        
+        <div class="divbarra" width="584px" height="44px" ><input id="barra" type="text" value="" width="584px" height="44px" maxlength="1000"></div>
+        
+        <div class= "row1">
+        <span><a onclick=linker() class ="waves-effect waves-light white grey-text btn col s12">Buscar con Google</a></span>   
+         
+        <span><a onclick=linker2() class ="waves-effect waves-light white grey-text btn col s12">Me siento con suerte</a></span>
+            
+        </div>    
+            
+        <a name="arriba"></a>
+        
+        
+       
+        
+        <div id="espanol"><center>Conoce más sobre MI:<a style="text-decoration:none;color:" href="file:///home/fede/Escritorio/cv/index.html"> Curriculum Vitae </a></center></div>
+        
+        <script>
+            
+                document.addEventListener("keydown", function(evento){
+                    if(evento.keyCode==13){
+                        linker();
+                    }
+                })
+            
+            
+                function linker(){ 
+                    if(document.getElementById("barra").value!= ""){
+                    
+                                window.location.href = "https://www.google.com.ar/search?q="+document.getElementById("barra").value+"&oq=yugioh&gs_l=psy-ab.3..0i67k1j0i131k1j0l2.65229.67815.0.68113.9.9.0.0.0.0.108.777.5j3.9.0.dummy_maps_web_fallback.2..0...1.1.64.psy-ab..0.9.865.6..35i39k1j0i10i67k1.95.JDmYu3VhW1s";
+                    }
+            
+                }
+            
+                function cambiar() {
+                    document.getElementById("gps").innerHTML = "<div class='large material-icons icon offset-s6'>location_on</div>";
+                }
+                
+                function linker2(){
+                    window.location.href = "https://es.wikipedia.org/wiki/"+document.getElementById("barra").value;
+                }
+        
+        </script>
+        
+    </body>
+
+</html>

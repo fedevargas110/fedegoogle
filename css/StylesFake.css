@@ -1,0 +1,81 @@
+.menu {
+    text-align: right;
+    margin-top: 1%;
+    margin-left: 70%;
+    margin-right: 2%;
+    
+        
+}
+
+#lol {
+    width: 7%;
+    height: 7%;
+    float: left;
+    float: right;
+}
+
+body {
+    width: 100%;
+    font-size: 80%;
+    font-family: arial, sans-serif;
+    background-size: 100%;
+    
+}
+
+span {
+    margin-right: 2.5%;
+}
+
+.Img {
+   
+    margin-top: 13%;
+    margin-left: 39%;
+    
+}
+.divbarra{
+    width: 100%;
+    
+}
+#barra {
+    margin-top: 1%;
+    align-content: center;
+    margin-left: 28%;
+    width: 527px;
+    height: 40px;
+    line-height: 250%;
+    border: 0;
+    background-color:white;
+    box-shadow: 0px 1px 2px #999;
+    padding-left: 15px;
+    padding-right: 10px;
+    
+    
+    
+    
+
+}
+.espanol {
+    margin-top: 4%;
+    font-family: arial, sans-serif;
+    display: flex;
+    ;
+}
+
+#xd {
+    margin-top: 5px;
+}
+
+.row {
+    display:flex;
+    margin-left: 75%;
+    margin-top: 1.1%;
+    text-align: justify;
+    width: 10%;
+}
+
+.row1 {
+    display: flex;
+    margin-left: 29.5%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;  
+}
