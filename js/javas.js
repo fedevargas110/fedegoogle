@@ -1,3 +1,4 @@
+
 document.addEventListener("keydown", function(evento){
     if(evento.keyCode==13){
         linker();
@@ -5,6 +6,7 @@ document.addEventListener("keydown", function(evento){
 })
 
 
+/*
 function linker(){ 
     if(document.getElementById("barra").value!= ""){
 
@@ -12,27 +14,30 @@ function linker(){
     }
 
 }
+*/
 
-function cambiar() {
-    document.getElementById("gps").innerHTML = "<div class='large material-icons icon offset-s6'>location_on</div>";
-}
+
+
 function cambiar2() {
     document.getElementById("signin").innerHTML = "<div class='large material-icons icon offset-s6'>account_circle</div>";
 }
 
-function linker2(){
+/*function linker2(){
     window.location.href = "https://es.wikipedia.org/wiki/"+document.getElementById("barra").value;
-}
-var provider = new firebase.auth.GoogleAuthProvider();
+}*/
 
-function Signingoogle(){
-    firebase.auth()
-
-
-        .signInWithPopup(provider).then(function(result) {
+function Signingoogle() {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken;
+        // The signed-in user info.
         var user = result.user;
-
+        // ...
+        var photo = user.photoURL;
+        document.getElementById('usr_img').src = photo;
+        
+        
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -44,8 +49,8 @@ function Signingoogle(){
         // ...
     });
 
-
 }
+
 function initializeFirebase() {
     // Initialize Firebase
     var config = {
@@ -53,10 +58,25 @@ function initializeFirebase() {
         authDomain: "project-5049986903013159327.firebaseapp.com",
         databaseURL: "https://project-5049986903013159327.firebaseio.com",
         projectId: "project-5049986903013159327",
-        storageBucket: "",
-        messagingSenderId: "952334451452"
+        storageBucket: ""
     };
     firebase.initializeApp(config);
 }
 
 initializeFirebase();
+
+function salir(){
+    console.log("Adasd");
+  firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+});  
+}
+
+function mostrarmapa() {
+    $("#container").load("map.html");
+}
+
+
+

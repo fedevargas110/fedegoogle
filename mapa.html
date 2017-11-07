@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="shortcut icon" href="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png" >
+        
+        <link rel="stylesheet" href="../css/StylesFake.css">
+        <title>Map</title>
+    </head>
+
+    <body>
+        <div id="map" style="height: 100vh; margin: 0;"></div>
+    </body>
+
+    <script>
+        function myMap() {
+
+            var mapOptions = {
+                center: new google.maps.LatLng(-31.421632,-64.186935),
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+
+</html>
