@@ -18,6 +18,27 @@
 </head>
 
 <body>
+
+  <nav>
+    <div class="nav-wrapper" style="background-color:#00c853">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+       <li><a href="https://mail.google.com/">Gmail</a></li>
+       <li><a href="badges.html">Components</a></li>
+       <li><a  href= "mapa.html" onclick="mostrarmapa()"><div id="maps" class="material-icons icon" style="font-size: 35px">map</div></a></li>
+       <li><a id="adds" class='dropdown-button' href='#' data-activates='dropdown1'><div class="material-icons" style="font-size: 35px">add</div></a></li>
+       <li><a id="usr_img" href"#" onclick="Signingoogle();"><div class="material-icons" style="font-size: 35px">account_circle</div></a></li>
+     </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
     <li><a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=act">Perfil</a></li>
@@ -25,7 +46,7 @@
     <li class="divider"></li>
     <li><a href="#!" onclick="salir()">Salir</a></li>
   </ul>
-  <div id="container">
+  <!-- <div id="container">
     <div class="row">
       <span><div class="col s1"><a style="text-decoration:none;color:#000"  href="https://mail.google.com/">Gmail</a></div></span>
 
@@ -36,11 +57,11 @@
 
       <!-- <span><div class="col s1"><a role="button" onclick="cambiar();" style="color:#000"><div class="large material-icons icon offset-s6" id="gps" role="button">apps</div></a></div></span> -->
 
-      <span><div class="col s1"><a class='dropdown-button' href='#' data-activates='dropdown1' style="color:#000"><div class="material-icons icon">add</div></a></div></span>
+      <!-- <span><div class="col s1"><a class='dropdown-button' href='#' data-activates='dropdown1' style="color:#000"><div class="material-icons">add</div></a></div></span>
 
       <span><div class="col s1"><input id="usr_img" type="image" onclick="Signingoogle();" src="https://www.materialui.co/materialIcons/action/account_circle_grey_192x192.png" height="30px"></div></span>
 
-    </div>
+    </div> -->
 
     <div class="ImagenGE">
       <img src="https://www.google.com.ar/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="260" height="90" class="Img" title="By FedeVagas">
@@ -53,7 +74,7 @@
 
 
 
-<gcse:search></gcse:search>
+    <gcse:search></gcse:search>
 
 
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>

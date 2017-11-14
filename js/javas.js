@@ -119,3 +119,7 @@ function updateData() {
 
   writeUserData(age, gender, address, phone)
 }
+
+$( document ).ready(function(){
+   $(".button-collapse").sideNav();
+})
