@@ -90,11 +90,13 @@ span {
 
 #usr_img {
      border-radius: 50%;
-     margin-top: 18%;
+     margin-top: 18px;
+     margin-left: 10px;
+     margin-right: 8px;
 }
 
 #maps {
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 #adds {
