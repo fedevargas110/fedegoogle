@@ -118,7 +118,7 @@ function writeUserData(age = "Not specified", gender = "Not specified", address 
 
 function updateData() {
   var age = document.getElementById("input_age").value;
-  var gender = document.getElementById("input_gender").value;
+  var gender = $("#input_gender option:selected").text();
   var address = document.getElementById("input_address").value;
   var phone = document.getElementById("input_phone").value;
 
@@ -142,3 +142,8 @@ function sideNavbar(){
   $("#emailG").empty();
   $("#emailG").text(email_nav);
 }
+
+$(document).ready(function() {
+    $('select').material_select();
+
+  });
