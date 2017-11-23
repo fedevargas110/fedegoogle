@@ -23,7 +23,7 @@
    | Google Maps API | Mapas de google |
 
 Se utilizo Trello para el desarrollo de la pagina web.
-https://trello.com/b/SbFaurpR/googleremastered
+https://trello.com/b/gK5nu8C3
 
 #  Capturas
 #### Como se muestra en esta primer imagen tenemos, podemos visualisar en la barra de arriba: 1-el sector para redirreccionarnos a nuestro gmail, 2-la seccion para modificar algunos datos de nuestro perfil, 3-la seccion para visualizar el mapa, 4-la seccion de mas opciones en donde podremos ir a nuestro perfil o desloguear de la cuenta de la pagina, y por ultimo tendremos el icono para iniciar con nuestra cuenta de google a la pagina.
