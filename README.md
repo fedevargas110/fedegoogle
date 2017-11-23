@@ -11,6 +11,8 @@
   GoogleRemastered es una pagina web que mantiene la busqueda de google que conocemos,
   pero se va a visualizar con un difernte diseño.
   
+   * abrí: https://fedevargas110.github.io/fedegoogle/
+  
 ##### Dependencias Utilizadas:
 ***
    | Nombre | Descripcion |
